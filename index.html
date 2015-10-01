@@ -17,14 +17,14 @@
 			
 
 	<div class="dpad">
-  			
-  			<button onclick="movUp();" id="up" type="submit" class="btn btn-warning">Up</button>
-  			<button onclick="movDown();" id="down" type="submit" class="btn btn-warning">Down</button>
-  			<button onclick="movLeft();" id="left" type="submit" class="btn btn-warning">Left</button>
-  			<button onclick="movRight();" id="right" type="submit" class="btn btn-warning">Right</button>
+  			<input onkeydown="if(event.keyCode == 38).newAdventure().moveUp"/> 
+  			<button onclick="newAdventure.movUp();" onkeydown="if(event.keyCode == 38) document.getEmlmentById('up').click()" id="up" type="submit" class="btn btn-warning">Up</button>
+  			<button onclick="newAdventure.movDown();" id="down" type="submit" class="btn btn-warning">Down</button>
+  			<button onclick="newAdventure.movLeft();" id="left" type="submit" class="btn btn-warning">Left</button>
+  			<button onclick="newAdventure.movRight();" id="right" type="submit" class="btn btn-warning">Right</button>
 	</div>
     <div class="container">
-        <button onclick="reset();" id="reset" type="submit" class="btn btn-danger">Reset</button>
+        <button onclick="newAdventure.reset();" id="reset" type="submit" class="btn btn-danger">Reset</button>
     </div>
 
 	<div class="container-fluid">
