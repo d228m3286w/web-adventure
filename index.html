@@ -16,16 +16,15 @@
 	</div>
 			
 
-	<div class="dpad">
-  			<input onkeydown="if(event.keyCode == 38).newAdventure().moveUp"/> 
+	<div class="navbar navbar-fixed-top">
+  			 
   			<button onclick="newAdventure.movUp();" onkeydown="if(event.keyCode == 38) document.getEmlmentById('up').click()" id="up" type="submit" class="btn btn-warning">Up</button>
   			<button onclick="newAdventure.movDown();" id="down" type="submit" class="btn btn-warning">Down</button>
   			<button onclick="newAdventure.movLeft();" id="left" type="submit" class="btn btn-warning">Left</button>
   			<button onclick="newAdventure.movRight();" id="right" type="submit" class="btn btn-warning">Right</button>
+  			<button onclick="newAdventure.reset();" id="reset" type="submit" class="btn btn-danger">Reset</button>
 	</div>
-    <div class="container">
-        <button onclick="newAdventure.reset();" id="reset" type="submit" class="btn btn-danger">Reset</button>
-    </div>
+    
 
 	<div class="container-fluid">
 		<div class="ttt-grid col-xs-offset-3">
