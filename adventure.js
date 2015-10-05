@@ -1,7 +1,17 @@
-
-
+// This js loads first
 // Initializing the corrdinates of the target cell 
 
+var makeGrid = function(rows, cols){
+    document.write('<table class="board">');
+        for (var i = 0; i < rows; i++) {
+            document.write('<tr>'); 
+                for (var j = 0; j < cols; j++){
+                    document.write('<td class="cell" id="' + i.toString() + j.toString() + '"></td>');
+                };
+            document.write('</tr>');
+         };
+    document.write('</table>');
+    };
 
 
 
@@ -11,11 +21,8 @@ function Adventure(xCoord, yCoord, endX, endY, bound) {
 	this.endX = endX;
 	this.endY = endY;
 	this.bound = bound;
-
-
-
-
 };
+
 var newAdventure = new Adventure(0, 0, 8, 8, 8);
 
 newAdventure.mov = function(xDel, yDel, x, y, bound) {
@@ -44,6 +51,7 @@ newAdventure.mov = function(xDel, yDel, x, y, bound) {
 	};
 }
 
+// Move and reset functions
 newAdventure.movDown = function() {
 	this.mov(0, -1, 0, 1, 8);
 }; 
@@ -67,6 +75,7 @@ newAdventure.reset = function() {
     console.log('hello');
 };
 
+// Attaches the arrow keys to the movement function 
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
@@ -86,6 +95,7 @@ document.onkeydown = function(e) {
 
     }
 };
+
 
 
 

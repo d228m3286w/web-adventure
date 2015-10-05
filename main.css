@@ -11,6 +11,9 @@
 	left: auto
 	right: auto;
 }
+.board {
+	margin: auto 0;
+}
 #up {
 	position: relative;
 	top: 0;

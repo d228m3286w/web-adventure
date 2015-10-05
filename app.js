@@ -1,5 +1,5 @@
 
-
+// This js loads second
 //Adding a function to replace the winning cell with a picture of dead Abe Simpson
 var killAbe = function () {
 	document.getElementById(newAdventure.endY.toString() + newAdventure.endX.toString()).innerHTML = "<img src=\"dead.jpg\"></img>";
